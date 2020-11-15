@@ -28,7 +28,7 @@ echo "-------------------------------------------------------------------------"
 echo "building \"$executable\" lambda"
 echo "-------------------------------------------------------------------------"
 docker run --rm -v "$workspace":/workspace -w /workspace builder \
-       bash -cl "swift build --product $executable -c release"
+       bash -cl "swift build --product $executable -c release -Xswiftc -static-stdlib"
 echo "done"
 
 echo "-------------------------------------------------------------------------"

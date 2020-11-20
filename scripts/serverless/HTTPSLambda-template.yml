@@ -1,0 +1,20 @@
+service: httpslambda-swift-aws
+
+package:
+    artifact: .build/lambda/HTTPSLambda/lambda.zip
+
+provider:
+    name: aws
+    runtime: provided
+    iamRoleStatements:
+        - Effect: Allow
+          Action:
+              - logs:CreateLogGroup
+              - logs:CreateLogStream
+              - logs:PutLogEvents
+          Resource: "*"
+
+functions:
+    hello:
+        handler: HTTPSLambda
+        memorySize: 128

@@ -18,7 +18,7 @@ cd HelloWorldLambda
 
 ## Examples
 
-`HelloWorldLabda` : It shows how to code a basic lambda
+`HelloWorldLambda` : It shows how to code a basic lambda
 
 `HTTPSLambda` : A Lambda which perform a network request using AsyncHTTPClient and Swift NIO
 

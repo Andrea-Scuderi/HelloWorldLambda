@@ -46,7 +46,7 @@ Check the plan of deployment is correct
 
 ## Terraform Apply
 
-Apply Terraform deployment and answer yes is everything is correct
+Apply Terraform deployment and answer yes, if everything is correct
 
 > `terraform apply`
 
@@ -56,6 +56,6 @@ Go to the AWS console and test your Lambdas.
 
 ## Terraform Destroy
 
-Destroy Terraform deployment and answer yes is everything is correct
+Destroy Terraform deployment and answer yes, if everything is correct
 
 > `terraform destroy`

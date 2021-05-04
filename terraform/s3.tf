@@ -41,7 +41,7 @@ resource "aws_s3_bucket_policy" "terraform_deployment_bucket_policy" {
 }
 
 # Add the Lambda Code to the S3 Bucket for deployment
-resource "aws_s3_bucket_object" "code_lambda_zip_lambda_push_register" {
+resource "aws_s3_bucket_object" "code_lambda_zip_lambda_register" {
   for_each      = local.lambda_settings
 
   bucket = "${var.s3bucket}"

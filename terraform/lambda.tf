@@ -19,6 +19,7 @@ resource "aws_lambda_function" "lambda_function_map" {
     aws_iam_role.terraform_iam_for_lambda_role,
     aws_iam_role_policy_attachment.terraform_cloudwatch_lambda_policy_attachment,
     aws_cloudwatch_log_group.lambda_log_cloudwatch_map,
-    aws_s3_bucket.terraform_deployment_bucket
+    aws_s3_bucket.terraform_deployment_bucket,
+    aws_s3_bucket_object.code_lambda_zip_lambda_register
   ]
 }

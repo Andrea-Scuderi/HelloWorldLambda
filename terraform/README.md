@@ -12,7 +12,7 @@ Here the references for installing terraform:
 `https://learn.hashicorp.com/tutorials/terraform/install-cli`
 
 
-### Build & Package the Lambda
+## Build & Package the Lambda
 
 ```
 ./scripts/build-and-package.sh HelloWorldLambda
@@ -21,7 +21,7 @@ Here the references for installing terraform:
 
 ## Update configuration with the s3buket variable
 
-The s3 bucked is unique so you need to input the name you want o give to it.
+The s3 bucket is globally unique so you need to input the name you want o give to it.
 You can add the key `s3bucket` to the file `terraform.tfvars`
 
 Example:

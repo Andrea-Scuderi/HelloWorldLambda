@@ -19,7 +19,7 @@ Here the references for installing terraform:
 ./scripts/build-and-package.sh HTTPSLambda
 ```
 
-## Update configuration with the s3buket variable
+## Update configuration with the s3bucket variable
 
 The s3 bucket is globally unique so you need to input the name you want o give to it.
 You can add the key `s3bucket` to the file `terraform.tfvars`
